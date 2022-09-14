@@ -1,5 +1,5 @@
 h1 {
-    color: red;
+    color: rgb(94, 255, 0);
     background-color: beige;
     pagging: 20px;
     text-align: center;
@@ -10,8 +10,95 @@ h1 {
 }
 
 .product_cell {
-    border: 2px solid red; 
+    border: 2px solid gray; 
     border-radius: 10px; 
     padding: 10px; 
     margin: 20px;
+    }
+
+.product_cell:hover {
+    border: 3px dashed red;
+    box-shadow: 0px 0x 10px red;
+    cursor: grab;
+}
+
+.product_cell:hover > img {
+    opacity: 50%;
+    border: 4px solid black;
+}
+
+    .laptop > h2 {
+        color: blue;
+    }
+    .laptop > h3 {
+        color: green;
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    .celular > h2 {
+        color: gold
+    }
+
+    .celular > h3 {
+        color: red;
+        text-align: center;
+        padding-right: 15px;
+    }
+
+    .airpods > h2 {
+        color: red;
+
+    }
+
+    .airpods > h3 {
+        color: gold;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    /* Estilos para el formulario */
+    .div_form {
+        width: 400px;
+        margin: 20px auto;
+    }
+
+.div_form > form > input {
+    height: 40px;
+    border-radius: 20px;
+    width: 70%;
+    font-size: 20px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.div_form > form > input:focus {
+    border: 2px solid blue;
+}
+
+.div_form > form > button {
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 28%;
+    outline: none;
+}
+
+.div_form > form > button:hover {
+    background-color: #666;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.div_form > form > button:focus {
+   border: 2px solid red;
+}
+
+/* Pseudo-elementos */
+.price::before {
+    content: "$ ";
+}
+.price::after {
+    content: ".00"
 }
