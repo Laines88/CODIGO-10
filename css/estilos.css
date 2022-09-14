@@ -98,7 +98,9 @@ h1 {
 /* Pseudo-elementos */
 .price::before {
     content: "$ ";
+    font-size: 12px;
 }
 .price::after {
     content: ".00"
+    font-size: 12px;
 }
