@@ -1,0 +1,10 @@
+h1 {
+    color: green;
+    background-color: beige;
+    pagging: 20px;
+    text-align: center;
+    font-size: 20px;
+    }
+#div_temas {
+    display: none ;
+}
